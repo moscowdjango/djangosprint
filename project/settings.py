@@ -15,6 +15,7 @@ import os
 
 IS_OPENSHIFT = os.environ.has_key('OPENSHIFT_REPO_DIR')
 DEBUG = not IS_OPENSHIFT
+TEMPLATE_DEBUG = DEBUG
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
