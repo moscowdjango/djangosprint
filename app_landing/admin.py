@@ -1,3 +1,8 @@
 from django.contrib import admin
+import app_landing.models
 
-# Register your models here.
+class BlockAdmin(admin.ModelAdmin):
+    list_display = ('title',)
+
+admin.site.register(app_landing.models.Block, BlockAdmin)
+
