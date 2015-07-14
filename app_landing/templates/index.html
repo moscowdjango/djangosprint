@@ -6,7 +6,7 @@
 <body>
   {% include 'header.html' %}
   {% for block in blocks %}
-    {% ifnotequal block.type 'none' %}
+    {% if block.type != 'none' %}
       {% include 'block_'|add:block.type|add:'.html' %}
     {% endifnotequal %}
   {% empty %}
