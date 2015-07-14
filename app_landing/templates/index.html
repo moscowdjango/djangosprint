@@ -5,7 +5,13 @@
 </head>
 <body>
   {% include 'header.html' %}
-  Here be dragons and tests.
+  {% for block in blocks %}
+    {% ifnotequal block.type 'none' %}
+      {% include 'block_'|add:block.type|add:'.html' %}
+    {% endifnotequal %}
+  {% empty %}
+    <div>no blocks are added in admin</div>
+  {% endfor %}
 </body>
 </html>
 
