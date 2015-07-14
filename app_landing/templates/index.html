@@ -8,7 +8,7 @@
   {% for block in blocks %}
     {% if block.type != 'none' %}
       {% include 'block_'|add:block.type|add:'.html' %}
-    {% endifnotequal %}
+    {% endif %}
   {% empty %}
     <div>no blocks are added in admin</div>
   {% endfor %}
