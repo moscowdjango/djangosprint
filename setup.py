@@ -7,6 +7,9 @@ setup(
     author='Grigory Petrov',
     author_email='grigory.v.p@gmail.com',
     url='http://djangosprint.cf/',
-    install_requires=['Django==1.8.1'],
+    install_requires=[
+        'Django==1.8.1',
+        'django-pipeline==1.5.2'
+    ],
 )
 
