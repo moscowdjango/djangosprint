@@ -2,5 +2,6 @@
 if test -e $OPENSHIFT_REPO_DIR/manage.py; then
   cd $OPENSHIFT_REPO_DIR
   python manage.py collectstatic --noinput
+  python manage.py syncdb
 fi
 
