@@ -3,7 +3,8 @@
   top: 0px;
   width: 100%;
   height: 100px;
-  background-color: lightyellow;
+  color: white;
+  background-color: #2196F3;
 }
 
 .header__bottom {

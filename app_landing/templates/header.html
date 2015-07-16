@@ -1,5 +1,11 @@
 <div class="header">
-header
+  {% for block in blocks|dictsort:"order" %}
+    {% if block.type != 'none' %}
+      <div class="header-item">
+        {{ block.title|capfirst }}
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
 <div class="header__bottom"></div>
 
