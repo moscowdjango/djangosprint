@@ -2,12 +2,27 @@
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 100px;
   color: white;
   background-color: #2196F3;
 }
 
 .header__bottom {
-  margin: 100px 0 0 0;
+  margin: 40px 0 0 0;
+}
+
+.header__items-container {
+  display: flex;
+}
+
+.header__item {
+  padding: 10px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.header__item:hover {
+  background-color: #1186E3;
+  cursor: pointer;
 }
 
