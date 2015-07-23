@@ -18,6 +18,8 @@ class Block(models.Model):
         (Type.SPONSORS, "sponsors"),
         (Type.MAP, "map"),
     ))
+    
     title = models.CharField(default="", max_length = 100)
     order = models.IntegerField(default = 0)
+    content = models.TextField(default = "");
 
