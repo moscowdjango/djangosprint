@@ -9,7 +9,8 @@ setup(
     url='http://djangosprint.cf/',
     install_requires=[
         'Django==1.8.1',
-        'django-pipeline==1.5.2'
+        'django-pipeline==1.5.2',
+        'pillow==2.9.0'
     ],
 )
 

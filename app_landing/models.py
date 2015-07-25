@@ -18,8 +18,15 @@ class Block(models.Model):
         (Type.SPONSORS, "sponsors"),
         (Type.MAP, "map"),
     ))
-    
+
     title = models.CharField(default="", max_length = 100)
     order = models.IntegerField(default = 0)
-    content = models.TextField(default = "");
+    content = models.TextField(default = "")
+
+
+class Highlight(models.Model):
+
+    order = models.IntegerField(default = 0)
+    description = models.TextField(default = "")
+    image = models.ImageField(default='/static/highlight_default.png')
 
