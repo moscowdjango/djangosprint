@@ -1,8 +1,11 @@
 <div class="block-about">
   {{ block.content }}
-  <div>
+  <div class="about-highlights">
   {% for highlight in highlights|dictsort:"order" %}
-    <img src="{{ highlight.image.url }}">
+    <div class="highlight">
+      <img src="{{ highlight.image.url }}">
+      {{ highlight.description }}
+    </div>
   {% endfor %}
   </div>
 </div>

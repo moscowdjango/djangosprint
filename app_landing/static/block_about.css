@@ -3,3 +3,12 @@
   background-color: lightgreen;
 }
 
+.about-highlights {
+  display: flex;
+}
+
+.highlight {
+  padding: 10px;
+  background-color: lightgrey;
+}
+
