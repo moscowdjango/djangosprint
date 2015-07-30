@@ -5,10 +5,10 @@
 
 .about-highlights {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .highlight {
   padding: 10px;
-  background-color: lightgrey;
 }
 
