@@ -1,4 +1,10 @@
 <div class="block-schedule">
-schedule
+<h1>schedule</h1>
+  {% for item in scheduleItems|dictsort:"datetime" %}
+  {% ifchanged item.datetime.date %}
+  <div>date: {{ item.datetime.date }}</div>
+  {% endifchanged %}
+  <div>{{ item.datetime }}</div>
+  {% endfor %}
 </div>
 
