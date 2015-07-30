@@ -4,7 +4,7 @@
   {% ifchanged item.datetime.date %}
   <div>date: {{ item.datetime.date }}</div>
   {% endifchanged %}
-  <div>{{ item.datetime }}</div>
+  <div>{{ item.datetime.time }}: {{ item.description }}</div>
   {% endfor %}
 </div>
 
