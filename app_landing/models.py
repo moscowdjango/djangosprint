@@ -30,3 +30,9 @@ class Highlight(models.Model):
     description = models.TextField(default = "")
     image = models.ImageField(default='/static/highlight_default.png')
 
+
+class ScheduleItem(models.Model):
+
+    datetime = models.DateTimeField()
+    description = models.TextField(default="")
+

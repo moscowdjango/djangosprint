@@ -7,6 +7,10 @@ class BlockAdmin(admin.ModelAdmin):
 class HighlightAdmin(admin.ModelAdmin):
     list_display = ('order', 'image')
 
+class ScheduleItemAdmin(admin.ModelAdmin):
+    list_display = ('datetime', 'description')
+
 admin.site.register(app_landing.models.Block, BlockAdmin)
 admin.site.register(app_landing.models.Highlight, HighlightAdmin)
+admin.site.register(app_landing.models.ScheduleItem, ScheduleItemAdmin)
 
