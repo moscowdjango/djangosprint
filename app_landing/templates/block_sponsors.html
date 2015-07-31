@@ -1,4 +1,13 @@
 <div class="block-sponsors">
-sponsors
+  {{ block.content }}
+  <h1>sponsors</h1>
+  <div class="about-sponsors">
+  {% for sponsor in sponsors|dictsort:"order" %}
+    <div class="sponsor">
+      <img src="{{ sponsor.image.url }}">
+      {{ sponsor.description }}
+    </div>
+  {% endfor %}
+  </div>
 </div>
 

@@ -1,4 +1,13 @@
 <div class="block-organizers">
-organizers
+  {{ block.content }}
+  <h1>organizers</h1>
+  <div class="about-organizers">
+  {% for organizer in organizers|dictsort:"order" %}
+    <div class="organizer">
+      <img src="{{ organizer.image.url }}">
+      {{ organizer.description }}
+    </div>
+  {% endfor %}
+  </div>
 </div>
 

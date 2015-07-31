@@ -36,3 +36,17 @@ class ScheduleItem(models.Model):
     datetime = models.DateTimeField()
     description = models.TextField(default="")
 
+
+class Organizer(models.Model):
+
+    order = models.IntegerField(default = 0)
+    description = models.TextField(default = "")
+    image = models.ImageField(default='/static/organizer_default.png')
+
+
+class Sponsor(models.Model):
+
+    order = models.IntegerField(default = 0)
+    description = models.TextField(default = "")
+    image = models.ImageField(default='/static/sponsor_default.png')
+

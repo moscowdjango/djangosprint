@@ -6,5 +6,7 @@ def index(request):
         'blocks': models.Block.objects.all(),
         'highlights': models.Highlight.objects.all(),
         'scheduleItems': models.ScheduleItem.objects.all(),
+        'organizers': models.Organizer.objects.all(),
+        'sponsors': models.Sponsor.objects.all(),
     })
 
