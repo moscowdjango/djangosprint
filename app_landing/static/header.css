@@ -1,13 +1,13 @@
 .header {
   position: fixed;
   top: 0px;
-  width: 100%;
   color: white;
   background-color: #2196F3;
+  width: 960px;
 }
 
 .header__bottom {
-  margin: 40px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .header__items-container {
