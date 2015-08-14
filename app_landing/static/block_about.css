@@ -5,10 +5,15 @@
 }
 
 .highlight {
+  display: flex;
   flex-grow: 1;
   min-width: 300px;
   margin: 10px;
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.highlight__description {
+  margin: 0 10px;
 }
 

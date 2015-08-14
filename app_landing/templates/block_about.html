@@ -4,7 +4,9 @@
   {% for highlight in highlights|dictsort:"order" %}
     <div class="highlight">
       <img src="{{ highlight.image.url }}">
-      {{ highlight.description }}
+      <div class="highlight__description">
+        {{ highlight.description }}
+      </div>
     </div>
   {% endfor %}
   </div>
