@@ -19,6 +19,7 @@
   font-family: Roboto, sans-serif;
   font-weight: 300;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .header__item:hover {

@@ -2,9 +2,9 @@
   <div class="header__items-container">
     {% for block in blocks|dictsort:"order" %}
       {% if block.type != 'none' %}
-        <div class="header__item">
-          {{ block.title|capfirst }}
-        </div>
+        <a href={{block.slug}} class="header__item">
+          {{block.title|capfirst}}
+        </a>
       {% endif %}
     {% endfor %}
   </div>

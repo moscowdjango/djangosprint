@@ -22,6 +22,7 @@ class Block(models.Model):
     title = models.CharField(default="", max_length = 100)
     order = models.IntegerField(default = 0)
     content = models.TextField(default = "")
+    slug = models.TextField(default="block")
 
 
 class Highlight(models.Model):
