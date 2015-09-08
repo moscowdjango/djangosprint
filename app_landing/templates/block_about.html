@@ -1,4 +1,5 @@
 <div class="block">
+  <a name="{{ block.slug }}"/>
   {{ block.content }}
   <div class="about-highlights">
   {% for highlight in highlights|dictsort:"order" %}
