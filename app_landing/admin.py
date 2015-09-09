@@ -2,7 +2,7 @@ from django.contrib import admin
 import app_landing.models
 
 class BlockAdmin(admin.ModelAdmin):
-    list_display = ('order', 'type', 'title')
+    list_display = ('order', 'type', 'slug', 'title')
 
 class HighlightAdmin(admin.ModelAdmin):
     list_display = ('order', 'image', 'description')

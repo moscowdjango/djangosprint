@@ -2,7 +2,7 @@
   <div class="header__items-container">
     {% for block in blocks|dictsort:"order" %}
       {% if block.type != 'none' %}
-        <a href={{block.slug}} class="header__item">
+        <a href="#{{block.slug}}" class="header__item">
           {{block.title|capfirst}}
         </a>
       {% endif %}
