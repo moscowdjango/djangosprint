@@ -10,7 +10,7 @@ setup(
     install_requires=[
         'Django==2.2.24',
         'django-pipeline==1.5.2',
-        'pillow==8.2.0'
+        'pillow==9.0.1'
     ],
 )
 
