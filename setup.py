@@ -8,7 +8,7 @@ setup(
     author_email='grigory.v.p@gmail.com',
     url='http://djangosprint.cf/',
     install_requires=[
-        'Django==2.2.24',
+        'Django==2.2.28',
         'django-pipeline==1.5.2',
         'pillow==8.2.0'
     ],
